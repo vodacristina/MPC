@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title> Strategii de control </title>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            Strategii de control predictive 
+            <i class="fas fa-chalkboard-teacher logo"></i>
+            
+        </a>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+
+    </header>
+    <div class="page-container">
+        <aside id="side-menu">
+            <a href="index.html">Ce inseamna MPC?</a>
+            <a href="pagini/caracteristici.html">Care sunt caracteristicile cheie a strategiei MPC</a>
+            <a href="pagini/exemple.html">Exemple de aplicatii controlate prin MPC</a>
+            <a href="pagini/contact.html">Contact</a>
+        </aside>
+        <main>
+            <h2 class="title"> Ce inseamna MPC </h2>
+            <p>
+                Controlul Predictiv Bazat pe Model face parte dintr-o clasă de metode de proiectare care folosesc modelul matematic al procesului pentru obţinerea unui semnal de comandă prin minimizarea unei funcţii obiectiv. De aici apare şi principalul dezavantaj care este reprezentat de necesitatea ca modelul matematic asociat procesului să fie foarte precis, lucru greu de îndeplinit pentru procese complexe.
+
+            </p>
+            <video class="intro-video" muted autoplay loop src="resurse/MPC.mp4">
+
+            </video>
+            <p>
+                Rezultatele algoritmului se bazează pe cunoaşterea modelului şi interdependenţele asociate, de unde este evident că rezultatele obţinute vor fi afectate în mod direct de diferenţele între procesul real şi modelul folosit. 
+
+            </p>
+            <div class="galerie">
+                <a target="_blank" href="imagini/mpc.jpg">
+                    <img src="imagini/mpc.jpg">
+                </a>
+                <a target="_blank" href="imagini/mpc2.png">
+                    <img src="imagini/mpc2.png">
+                </a>
+                <a target="_blank" href="imagini/mpc3.jpg">
+                    <img src="imagini/mpc3.jpg">
+                </a>
+            </div>
+        </main>
+
+    </div>
+    <script src="js/main.js" />
+    </script>
+
+</body>
+
+</html>

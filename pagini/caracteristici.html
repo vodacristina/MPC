@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title> Strategii de control predictive </title>
+
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html">
+                Strategii de control predictive
+                <i class="fas fa-chalkboard-teacher logo"></i>
+                
+            </a>
+            <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+
+        </header>
+        <div class="page-container">
+            <aside id="side-menu">
+                <a href="../index.html">Ce inseamna MPC?</a>
+                <a href="caracteristici.html">Care sunt caracteristicile cheie a strategiei MPC</a>
+                <a href="exemple.html">Exemple de aplicatii controlate prin MPC</a>
+                <a href="contact.html">Contact</a>
+            </aside>
+            <main>
+                <h2 class="title">Care sunt caracteristicile cheie a strategiei de control predictiv bazat pe model </h2>
+                <div class="row row-evenimente">
+                    <div class="col-50 evenimente">
+                        <div class="evenimente">
+                            <h4>Metodologia tuturor cotrolerelor ce apartin familiei MPC este caracterizata de urmatoarea strategie:
+                            </h4>
+                            <p>
+                                Iesirile viitoare pentru un orizont determinat, numit orizont de predictie, sunt prezise la fiecare moment t folosind modelul procesului Aceste iesiri anticipate depind de valorile cunoscute si de semnalele de control viitoare, care sunt cele ce trebuie trimise catre sistem si sa fie calculate.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-50 evenimente">
+                        <div class="evenimente">
+                            <h4>Metodologia tuturor cotrolerelor ce apartin familiei MPC este caracterizata de urmatoarea strategie:
+                            </h4>
+                            <p>Setul de semnale de control viitoare este calculat prin optimizarea unui criteriu determinat pentru a mentine procesul cat mai aproape de traiectoria de referinta. Acest criteriu ia deobicei forma unei functii patratice.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row row-evenimente">
+                    <div class="col-50 evenimente">
+                        <div class="evenimente">
+                            <h4>Care sunt avantajele strategiei de control MPC?</h4>
+                            <p>
+                                Are o formulare simpla, bazata pe concepte bine înțelese, intuitive
+                                <ul class="contact-list">
+                                    <li>Manipulează în mod explicit constrângerile</li>
+                                    <li>Utilizeaza explicit  un model</li>
+                                    <li>Parametrii de reglare bine înțelesi - Orizont de predicție - Configurarea problemei de optimizare </li>
+                                    <li>Timp de dezvoltare mult mai scurt decât pentru alte metode avansate de control</li>
+                                    <li>Mai ușor de întreținut: schimbarea modelului sau a specificațiilor nu necesită reproiectare completă, uneori se poate face din mers</li>
+                                    <li>Poate fi folosit pentru a controla o mare varietate de procese, de la cele cu o dinamica relativ simpla pana la altele mai complexe, inclusive sisteme cu timpi lungi de intarziere sau instabile</li> 
+                            </ul>
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-50 evenimente">
+                        <div class="evenimente">
+                            <h4>Care sunt dezavantajele strategiei MPC?</h4>
+                            <p>
+                                Un punct slab al acestui tip de algoritmi de control este faptul că implementarea presupune prelucrări matematice complexe, care nu sunt foarte populare la nivelul inginerilor practicieni.
+                                Totodată, prelucrările complexe, ocupă un timp de procesare semnificativ la nivelul unui sistem cu microprocesor, ceea ce influenţează respectarea ideii de timp real la nivelul unui proces fizic. Totuşi, arhitecturile actuale de sisteme cu microprocesor, datorită unor posibilităţi de prelucrare multi-core, adică prelucrare paralelă reală, permit implementări ale unor prelucrări matematice complexe într-un timp foarte scurt.
+                                Evoluţia actuală a sistemelor cu microprocesoare a permis ca algoritmii de control predictiv să fie implementaţi cu succes şi pe procese rapide. 
+                               Necesitatea ca un model al procesului sa fie dispoibil.Algoritmul de proiectare se bazeaza pe o cunoastere in prealabil a modelului si este independent de acesta, dar este evident ca beneficiile obtinute vor fi afectate de discrepantele existente intre procesul real si modelul utilizat.
+                                
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+               
+            </main>
+
+        </div>
+        <script src="../js/main.js"></script>
+
+    </body>
+
+</html>
